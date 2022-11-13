@@ -11,6 +11,9 @@ body {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }*/
+h1 {
+  text-align: center;
+}
 header {
   background-color: wheat;
   padding: 1rem;
@@ -19,4 +22,23 @@ header a {
   color: black;
   text-decoration: none;
   font-weight: bold;
+}
+main {
+  padding: 1rem;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product {
+  border: 1px wheat solid;
+  margin: 1rem;
+}
+.product img {
+  width: 100%;
+  max-width: 400px;
+}
+.product-info {
+  padding: 1rem;
 }
