@@ -6,13 +6,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.site-container {
+  min-height: 100vh;
+}
 /*code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}*/
-h1 {
-  text-align: center;
 }
 header {
   background-color: wheat;
@@ -22,10 +21,23 @@ header a {
   color: black;
   text-decoration: none;
   font-weight: bold;
+} */
+.navbarColor {
+  background-color: wheat;
 }
+.myBrand {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+h1 {
+  text-align: center;
+}
+
 main {
-  padding: 1rem;
+  flex: 1;
 }
+
 .products {
   display: flex;
   flex-wrap: wrap;
