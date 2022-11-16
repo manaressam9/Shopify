@@ -43,7 +43,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
 }
-.product {
+/*.product {
   border: 1px wheat solid;
   margin: 1rem;
 }
@@ -53,4 +53,21 @@ main {
 }
 .product-info {
   padding: 1rem;
+}*/
+.productName {
+  color: black;
+  text-decoration: none;
+}
+.card-button {
+  background-color: wheat;
+  color: black;
+  border-color: black;
+}
+.card-button:hover {
+  background-color: black;
+  color: wheat;
+  border-color: wheat;
+}
+.product-rating i {
+  color: gold;
 }
