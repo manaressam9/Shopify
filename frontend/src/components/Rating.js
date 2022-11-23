@@ -5,7 +5,7 @@ export default function Rating(props) {
   const stars = [];
   for (let i = 0; i < 5; i++) {
     stars.push(
-      <span>
+      <span key={i}>
         <i
           className={
             rating >= i + 1

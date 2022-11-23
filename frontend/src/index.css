@@ -71,3 +71,9 @@ main {
 .product-rating i {
   color: gold;
 }
+.img-large {
+  max-width: 100%;
+}
+.productScreen-card {
+  border: none;
+}
