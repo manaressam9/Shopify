@@ -5,10 +5,13 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Rating from '../components/Rating';
+import LoadingBox from '../components/LoadingBox';
 import Card from 'react-bootstrap/Card';
 import Badge from 'react-bootstrap/Badge';
 import Button from 'react-bootstrap/Button';
 import { Helmet } from 'react-helmet-async';
+import MessageBox from '../components/MessageBox';
+import { getError } from '../components/Utils';
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -39,7 +42,7 @@ export default function ProductScreen() {
         const result = await axios.get(`/api/products/slug/${slug}`);
         dispatch({ type: 'FETCH_SUCCESS', payload: result.data });
       } catch (error) {
-        dispatch({ type: 'FETCH_FAIL', payload: error.message });
+        dispatch({ type: 'FETCH_FAIL', payload: getError(error) });
       }
 
       //setProducts(result.data);
@@ -50,9 +53,9 @@ export default function ProductScreen() {
   return (
     <div>
       {loading ? (
-        <div>Loading...</div>
+        <LoadingBox></LoadingBox>
       ) : error ? (
-        <div>{error}</div>
+        <MessageBox variant="danger">{error}</MessageBox>
       ) : (
         <Row>
           <Col md={6}>

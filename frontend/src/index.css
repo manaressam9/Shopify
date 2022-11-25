@@ -77,3 +77,6 @@ main {
 .productScreen-card {
   border: none;
 }
+.Spinner-Color {
+  background-color: wheat;
+}
