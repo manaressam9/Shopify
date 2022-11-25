@@ -1,6 +1,7 @@
 const data = {
   products: [
     {
+      _id: '1',
       name: 'Nike slim shirt',
       slug: 'nike-slim-shirt',
       category: 'shirts',
@@ -13,6 +14,7 @@ const data = {
       description: 'high quality shirt',
     },
     {
+      _id: '2',
       name: 'Nike slim pants',
       slug: 'nike-slim-pants',
       category: 'pants',
@@ -25,6 +27,7 @@ const data = {
       description: 'high quality pants',
     },
     {
+      _id: '3',
       name: 'Nike wide pants',
       slug: 'nike-wide-pants',
       category: 'pants',
@@ -37,6 +40,7 @@ const data = {
       description: 'high quality pants',
     },
     {
+      _id: '4',
       name: 'Addidas wide pants',
       slug: 'Addidas-wide-pants',
       category: 'pants',
@@ -49,6 +53,7 @@ const data = {
       description: 'high quality pants',
     },
     {
+      _id: '5',
       name: 'Nike slim shirt',
       slug: 'nike-slim-shirt1',
       category: 'shirts',
@@ -61,6 +66,7 @@ const data = {
       description: 'high quality shirt',
     },
     {
+      _id: '6',
       name: 'Nike slim pants',
       slug: 'nike-slim-pants1',
       category: 'pants',
@@ -73,6 +79,7 @@ const data = {
       description: 'high quality pants',
     },
     {
+      _id: '7',
       name: 'Nike wide pants',
       slug: 'nike-wide-pants1',
       category: 'pants',
@@ -85,6 +92,7 @@ const data = {
       description: 'high quality pants',
     },
     {
+      _id: '8',
       name: 'Addidas wide pants',
       slug: 'Addidas-wide-pants1',
       category: 'pants',

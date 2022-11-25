@@ -26,7 +26,8 @@ function App() {
                   Cart<span> </span>
                   {cart.cartItems.length > 0 && (
                     <Badge pill bg="dark">
-                      {cart.cartItems.length}
+                      {cart.cartItems.reduce((a, c) => a + c.quantity, 0)}{' '}
+                      {/* to display quantity of items and not no. of items */}
                     </Badge>
                   )}
                 </Link>
